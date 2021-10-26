@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListeningActivity"
+    android:id="@+id/layout_AL">
+
+    <ImageView
+        android:id="@+id/dialogue4Picture"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/audio4Button"
+        app:layout_constraintStart_toEndOf="@+id/audio4Button"
+        app:layout_constraintTop_toTopOf="@+id/audio4Button"
+        app:srcCompat="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/dialogue4Text"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/pink_rounded_corner"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialogue4Picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialogue4Picture"
+        app:layout_constraintTop_toTopOf="@+id/dialogue4Picture" />
+
+    <ImageButton
+        android:id="@+id/audio4Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="75dp"
+        android:background="#000000"
+        android:onClick="playDialogue4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audio3Button"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <ImageView
+        android:id="@+id/dialogue3Picture"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/audio3Button"
+        app:layout_constraintStart_toEndOf="@+id/audio3Button"
+        app:layout_constraintTop_toTopOf="@+id/audio3Button"
+        app:srcCompat="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/dialogue3Text"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/pink_rounded_corner"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialogue3Picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialogue3Picture"
+        app:layout_constraintTop_toTopOf="@+id/dialogue3Picture" />
+
+    <ImageButton
+        android:id="@+id/audio3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="75dp"
+        android:background="#000000"
+        android:onClick="playDialogue3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audio2Button"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <ImageView
+        android:id="@+id/dialogue2Picture"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/audio2Button"
+        app:layout_constraintStart_toEndOf="@+id/audio2Button"
+        app:layout_constraintTop_toTopOf="@+id/audio2Button"
+        app:srcCompat="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/dialogue2Text"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/pink_rounded_corner"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialogue2Picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialogue2Picture"
+        app:layout_constraintTop_toTopOf="@+id/dialogue2Picture" />
+
+    <ImageButton
+        android:id="@+id/audio2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="75dp"
+        android:background="#000000"
+        android:onClick="playDialogue2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audio1Button"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <ImageView
+        android:id="@+id/dialogue1Picture"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/audio1Button"
+        app:layout_constraintStart_toEndOf="@+id/audio1Button"
+        app:layout_constraintTop_toTopOf="@+id/audio1Button"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/dialogue5Picture"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/audio5Button"
+        app:layout_constraintStart_toEndOf="@+id/audio5Button"
+        app:layout_constraintTop_toTopOf="@+id/audio5Button"
+        app:srcCompat="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/dialogue5Text"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/pink_rounded_corner"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialogue5Picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialogue5Picture"
+        app:layout_constraintTop_toTopOf="@+id/dialogue5Picture" />
+
+    <ImageButton
+        android:id="@+id/audio5Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="75dp"
+        android:background="#000000"
+        android:onClick="playDialogue5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audio4Button"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <TextView
+        android:id="@+id/dialogue1Text"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/pink_rounded_corner"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialogue1Picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialogue1Picture"
+        app:layout_constraintTop_toTopOf="@+id/dialogue1Picture" />
+
+    <ImageButton
+        android:id="@+id/audio1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:background="#000000"
+        android:onClick="playDialogue1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insText_ls"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <ImageView
+        android:id="@+id/emotionNameText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/insText_ls"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="First, listen and then match the sentences with the pictures below, please."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emotionNameText" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="#DA3939"
+        android:onClick="goToNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

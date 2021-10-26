@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CatchActivity"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionPicture">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="90dp"
+            android:layout_height="110dp"
+            android:onClick="pictureSelected"
+            android:src="@drawable/empty" />
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/emotionNamePic"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/descriptionPicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emotionNamePic"
+        app:srcCompat="@drawable/happy" />
+
+    <TextView
+        android:id="@+id/sentenceText"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/pink_rounded_corner"
+        android:text="TextView"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#EF004C"
+        android:onClick="goToNextActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/stageText"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:text="textviiiew"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/insText_ls"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Please, touch the pictures above."
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintStart_toEndOf="@+id/stageText"
+        app:layout_constraintTop_toTopOf="@+id/stageText" />
+
+    <ImageView
+        android:id="@+id/questionPic"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/descriptionPicture"
+        app:layout_constraintStart_toEndOf="@+id/descriptionPicture"
+        app:layout_constraintTop_toTopOf="@+id/descriptionPicture"
+        app:srcCompat="@drawable/anger_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

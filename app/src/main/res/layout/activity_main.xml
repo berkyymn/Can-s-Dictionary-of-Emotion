@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mrb">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/happinessPicture"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="happinessSelected"
+            android:src="@drawable/happy"
+            app:layout_column="0"
+            app:layout_row="0"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/emotionName1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FCE7E6"
+            android:gravity="center"
+            android:text="HAPPINESS"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/emotion1Picture"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="emotion1Selected"
+            android:src="@drawable/lock"
+            app:layout_column="1"
+            app:layout_row="0"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/emotionName2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#A3CA90C2"
+            android:gravity="center"
+            android:text="SADNESS"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/emotion2Picture"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="emotion2Selected"
+            android:src="@drawable/lock"
+            app:layout_column="2"
+            app:layout_row="0"
+            />
+
+        <TextView
+            android:id="@+id/emotionName3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#435D308F"
+            android:gravity="center"
+            android:text="FEAR"
+            android:textColor="#FFFFFF"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/emotion3Picture"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="emotion3Selected"
+            android:src="@drawable/lock"
+            app:layout_column="0"
+            app:layout_row="2"
+             />
+
+        <TextView
+            android:id="@+id/emotionName4"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="#A81AB360"
+            android:gravity="center"
+            android:text="DISGUST"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <ImageView
+            android:id="@+id/emotion4Picture"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="emotion4Selected"
+            android:src="@drawable/lock"
+            app:layout_column="1"
+            app:layout_row="2"
+             />
+
+        <TextView
+            android:id="@+id/emotionName5"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#8BE34E4E"
+            android:gravity="center"
+            android:text="ANGER"
+            android:textColor="#FFFFFF"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <ImageView
+            android:id="@+id/emotion5Picture"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="emotion5Selected"
+            android:src="@drawable/lock"
+            app:layout_column="2"
+            app:layout_row="2"
+             />
+
+        <TextView
+            android:id="@+id/emotionName6"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#7A5A1855"
+            android:gravity="center"
+            android:text="HATE"
+            android:textColor="#FFFFFF"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <ImageView
+            android:id="@+id/emotion6Picture"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="emotion6Selected"
+            android:src="@drawable/lock"
+            app:layout_column="0"
+            app:layout_row="4"
+             />
+
+        <TextView
+            android:id="@+id/emotionName7"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#92D53971"
+            android:gravity="center"
+            android:text="SHAME"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <ImageView
+            android:id="@+id/emotion7Picture"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="emotion7Selected"
+            android:src="@drawable/lock"
+            app:layout_column="1"
+            app:layout_row="4"
+             />
+
+        <TextView
+            android:id="@+id/emotionName8"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#9EFEED21"
+            android:gravity="center"
+            android:text="WONDER"
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <ImageView
+            android:id="@+id/emotion8Picture"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:onClick="emotion8Selected"
+            android:src="@drawable/lock"
+            app:layout_column="2"
+            app:layout_row="4"
+           />
+
+        <TextView
+            android:id="@+id/emotionName9"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#677DCF"
+            android:gravity="center"
+            android:text="BONUS"
+            app:layout_column="2"
+            app:layout_row="5" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
